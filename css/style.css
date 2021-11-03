@@ -166,7 +166,7 @@ overflow: hidden;
 
 }
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
 		.option{
 			flex-direction: column;
 		}
