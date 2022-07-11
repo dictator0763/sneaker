@@ -1,0 +1,356 @@
+@media(min-width:100px){
+
+html body{
+	background-color: white;
+	color: black;
+	margin:0;
+}
+
+.navbar{
+	opacity: 1;
+	min-height: 10px;
+	min-width:100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	backdrop-filter: blur(10px);
+	animation: nav-load 500ms;
+}
+
+
+
+.logo{
+	min-height: 100%;
+	width: 50px;
+	padding: 0px 30px;
+	display: block;
+	width: 7%;
+}
+
+.navbar ul{
+	padding-top: 25px;
+	list-style: none;
+	float: right;
+	font-size: 15px;
+}
+
+.navbar li{
+	display: inline;
+	padding-left: 50px;
+	color: black;
+	padding-right: 60px;
+	font-family: "Century Gothic", sans-serif;
+}
+
+a:link{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	font-weight: bold;
+}
+
+a:visited{
+	color: black;
+}
+
+.showcase{
+margin-top:50px;
+min-height: 200px;
+padding: 200px, 20px;
+position: relative;
+overflow: hidden;
+}
+
+.showcase:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: url('../img/bg3.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+}
+
+.showcase h1,.showcase p{
+	text-align: left;
+	align-items: left;
+	font-size: 20px;
+	letter-spacing: 0.0em;
+	position: relative;
+	color: #0047ab;
+	width: 700px;
+	word-wrap: break-word;
+	padding:0px;
+	animation: title-load 2s;
+}
+
+.showcase h1{
+	padding-top: 100px;
+	font-size: 55px;
+	letter-spacing:10px;
+	padding-left: 50px;
+	font-family: "Arial ", sans-serif;
+
+}
+
+.showcase h1:hover{
+	color: blue;
+
+}
+
+
+.showcase p{
+	color: black;
+	font-weight: bold;
+	font-family: "Century Gothic", sans-serif;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	width: 600px;
+	word-wrap: break-word;
+}
+
+.opt img{
+	padding-right: 50px;
+	height:130px;
+	width:130px;
+	transform: scale(1);
+	transition: 250ms ease-in;
+	animation: logo-load 2s;
+}
+
+.opt img:hover{
+	transform: scale(1.05);
+}
+
+.option{
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	padding-top:0px;
+	transform: scale(1);
+	transition: 250ms ease-in;
+	flex-direction: row;
+}
+
+.option:hover{
+	transform: scale(1);
+}
+
+.opt p{
+	text-align: center;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	margin: 0 20px;
+	box-sizing: border-box;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container img{
+	height:40px;
+	width:40px;
+	opacity: 1;
+	margin: 15px;
+	border: 1px solid black;
+	border-radius: 100px;
+	float: right;
+
+}
+
+.content{
+ background-image: url('../img/background2.jpg');
+ height: auto;
+ margin: 0;
+ padding: 30px;
+ 	border-top: 5px solid #0099ff;
+	border-bottom: 5px solid #0099ff;
+	background-repeat: repeat;
+	font-family: "Century Gothic", sans-serif;
+}
+
+.content h2{
+	padding: 10px;
+	text-align: center;
+	color: #0099ff;
+
+}
+
+@media (max-width: 768px){
+		.option{
+			flex-direction: column;
+		}
+		.container{
+			flex-direction: column;
+		}
+
+}
+
+._content{
+	border: 0.5px solid #262626;
+	border-radius: 30px;
+	height: 180px;
+	width: 100%;
+	margin: 20px;
+	flex: 1;
+	background: #0d0d0d;
+	transition: 150ms ease-in-out;
+}
+
+._content:hover{
+	border: 1px ridge #0099ff;
+}
+
+.container h3{
+	text-align: center;
+	padding-left: 60px;
+	color: #0099ff;
+}
+
+.container p{
+	padding: 20px;
+	padding-top: 0;
+	font-size: 15px;
+}
+
+.container a{
+	text-decoration: none;
+	color: #0099ff;
+}
+
+.container a:hover{
+	color: white;
+}
+
+
+footer{
+	text-align: center;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 15px;
+	color: black;
+	margin-top: 50px;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.dropd{
+	position: relative;
+	display: inline-block;
+}
+
+.dropd-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	padding: 12px 16px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+}
+
+.dropd:hover .dropd-content{
+	display: block;
+
+}
+
+.drpbtn{
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.dropd-content a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropd-content a:hover{
+	background-color: grey;
+}
+
+.dropd:hover .drpbtn{
+	background-color: blue;
+}
+.option button{
+	padding: 10px 140px;
+	margin: 10px 0px;
+	font-family: "Century Gothic", sans-serif;
+	color: black;
+	background-color:white;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	transition: 250ms ease-in;	
+	border: 1px solid black;
+	animation: button-load 2s;
+}
+
+.option button:hover{
+	padding: 10px 140px;
+	margin: 10px 0px;
+	font-family: "Century Gothic", sans-serif;
+	color: white;
+	background-color:white;
+		background-color:#0047ab;
+	border-radius: 5px;
+	font-weight: bold;
+		border: 1px solid #0047ab;
+}
+@keyframes nav-load{
+
+	0% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes title-load{
+
+	0% {
+		transform: translateX(-30%);
+	}
+	
+	100% {
+		transform: translateX(0);
+		transition-timing-function: ease-in;
+	}
+}
+
+@keyframes button-load{
+
+	0% {
+		transform: translateY(200%);
+		opacity: 0;
+	}
+	
+	100% {
+		transform: translateY(0);
+		transition-timing-function: ease-in;
+		opacity: 1;
+	}
+}

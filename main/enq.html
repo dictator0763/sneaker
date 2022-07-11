@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="css/enq.css">
+	<script type="text/javascript" language="javascript">
+ 
+function validateForm()
+    {
+        var ufname=document.forms["regform"]["fname"].value;
+        var uemail=document.forms["regform"]["email"].value;
+        var uGender=document.forms["regform"]["gender"].value;
+        var uCountry=document.forms["regform"]["country"].value;
+        var uEnquiry=document.forms["regform"]["enquiry"].value;
+
+        if (ufname=="" || uemail=="" || uGender=="" || uCountry=="" || uEnquiry=="" )
+        {
+            alert("PLEASE ENTER THE VALUES!");
+            return false;
+        }
+        else
+        {
+            var myWindow = window.open("", "RegisterWindow", "width=500,height=400");
+            myWindow.document.write("<p>Congratulations!</p> <p>Name :  "+ufname+".</p><p>Email : "+ uemail +".</p><p>Country : "+ uCountry +"</p><p>Your Detail Enquiry : "+ uEnquiry +".");
+        }
+    }
+</script>
+<style type="text/css">
+	div {
+        margin-bottom: 5px;
+      }
+      label {
+        display: inline-block;
+        width: 120px;
+
+      }
+
+</style>
+<div class="container">
+<div class="content">
+	<div class="starter">
+		<div class="navbar">
+			<div class="bar">
+				<ul>
+					<li><a target="blank" href="../main/products.html">Products</a></li>
+					<li><a target="blank" href="../main/abtme.html">About</a></li>
+					<li><a target="blank" href="../main/enq.html">More</a></li>
+				</ul>
+			<a href="..\index.html"><img align="center" class="logo" src="img\logo1.png" alt="Logo" class="center"></a>	
+
+		</div>
+	</div>
+</div>
+
+<div>
+
+<form method="post" class="form" name="regform" id="regform" onsubmit="return validateForm() ">
+<div class="enq">
+<div>
+  <h2>Get in touch</h2>
+  <input  class="textbar" type="text" name="fname" id="fname" placeholder="Full Name">
+</div>
+<div>
+
+  <input class="textbar" type="text" name="email" id="email" placeholder="johndoe@gmail.com">
+</div>
+<div>
+
+  <input style="margin-left: 80px; margin-bottom: 5px" type="radio" id="male" name="gender" value="male"> Male
+<input style="margin-left: 30px; margin-bottom: 15px" type="radio" id="female" name="gender" value="female"> Female
+</div>
+<div>
+ <select id="country" name="country">
+ <option disabled selected value>--select state--</option>
+<option value="Sabah">Sabah</option>
+<option value="Sarawak">Sarawak</option>
+<option value="Negeri Sembilan">Negeri Sembilan</option>
+<option value="Kedah">Kedah</option>
+<option value="Selangor">Selangor</option>
+<option value="Perak">Perak</option>
+<option value="Pahang">Pahang</option>
+<option value="Perlis">Perlis</option>
+<option value="Melaka">Melaka</option>
+<option value="Terengganu">Terengganu</option>
+<option value="Kelantan">Kelantan</option>
+<option value="Pulau Pinang">Pulau Pinang</option>
+<option value="Johor">Johor</option>
+<option value="Wilayah Persekutuan Kuala Lumpur">Wilayah Persekutuan Kuala Lumpur</option>
+<option value="Wilayah Persekutuan Labuan">Wilayah Persekutuan Labuan</option>
+<option value="Wilayah Persekutuan Putrajaya">Wilayah Persekutuan Putrajaya</option>
+</select>
+</div>
+<div>
+<textarea rows="4" cols="39" id="enquiry" rows="4" style="padding: 0px 15px" placeholder="Type your enquiry"></textarea>
+</div>
+
+  <button type="submit" value="submit">Submit</button>
+</div>
+</form>
+</div>
+</div>
+
+  <footer>
+    <p style="font-size: 15px; font-weight: normal;">Copyright &copy; 2022 THE SNEAKERHEADZ</p>
+  </footer>
+  </body>
+</html>

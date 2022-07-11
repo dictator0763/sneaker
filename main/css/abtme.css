@@ -1,0 +1,226 @@
+
+
+@keyframes transitionIn {
+
+	from{
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	to{
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+
+html body{
+  background-image: url('../img/shoes.jpg');
+    background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+	color: black;
+}
+
+
+.container{
+	margin: 0px 0px;
+	margin-top: 50px;
+
+}
+
+.container h3{
+	text-align: center;
+	padding-left: 60px;
+	color: black;
+}
+
+.container p{
+	padding: 20px;
+	padding-top: ;
+	font-size: 10px;
+}
+
+.container a{
+	text-decoration: none;
+	color: white;
+	font-weight: normal;
+}
+
+
+.container a:hover{
+	color: white;
+	font-weight: bold;
+}
+
+
+.content{
+ height: auto;
+ margin-top: 100px;
+ padding: 30px;
+	background-repeat: repeat;
+	font-family: "Century Gothic", sans-serif;
+	display: flex;
+	box-sizing: border-box;
+	flex-direction: row;
+}
+
+.content h2{
+	padding-left: 0px;
+		font-size: 22px;
+		text-align: center;
+}
+
+.navbar{
+	opacity: 1;
+	min-height: 10px;
+	min-width:100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	backdrop-filter: blur(10px);
+	animation: nav-load 500ms;
+}
+
+.logo{
+	min-height: 100%;
+	width: 50px;
+	padding: 0px 30px;
+	display: block;
+	width: 7%;
+}
+
+
+.option{
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+	padding-top:0px;
+	transform: scale(1);
+	transition: 250ms ease-in;
+	flex-direction: row;
+}
+
+.option:hover{
+	transform: scale(1);
+}
+
+.opt p{
+	text-align: center;
+	padding: 0;
+}
+
+.navbar ul{
+	padding-top: 25px;
+	list-style: none;
+	float: right;
+	font-size: 15px;
+}
+
+.navbar li{
+	display: inline;
+	padding-left: 50px;
+	color: black;
+	padding-right: 60px;
+	font-family: "Century Gothic", sans-serif;
+}
+
+.about{
+	padding: 120px 20px;
+	margin-top: 100px;
+	margin-left: 100px;
+	margin-bottom: 30px;
+	color: white;
+	animation: about-load 1s;	
+}
+
+.about_desc{
+	padding: 20px 0px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	color: white;
+	width: 1000px;
+	animation: about_desc-load 1.5s;
+}
+
+.about_desc p{
+	font-size: 15px;
+	margin-left: 17px; 
+}
+
+.about_desc ul{
+	list-style: none;
+	font-size: 15px;
+}
+
+.border{
+	border-right: 2px solid white;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	animation: bord-load 1s;
+}
+
+footer{
+	text-align: center;
+	font-family: "Century Gothic", sans-serif;
+	font-size: 24px;
+	color: white;
+	margin: 30px 0px;
+}
+
+@keyframes about_desc-load{
+
+	0% {
+		transform: translateX(-120%);
+		opacity: 0;
+	}
+
+	75%{
+		opacity: 0;
+	}
+	
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes about-load{
+
+	0% {
+		transform: translateX(120%);
+		opacity: 0;
+	}
+
+	50%{
+		opacity: 0;
+	}
+	
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes bord-load{
+
+	0% {
+		transform: translateY(-50%);
+
+	}
+
+	
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes nav-load{
+
+	0% {
+		transform: translateY(-100%);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}

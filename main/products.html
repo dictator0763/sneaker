@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/products.css" />
+  </head>
+  <body>
+	<div class="starter">
+		<div class="navbar">
+			<div class="bar">
+				<ul>
+					<li><a target="blank" href="../main/products.html">Products</a></li>
+					<li><a target="blank" href="../main/abtme.html">About</a></li>
+					<li><a target="blank" href="../main/enq.html">More</a></li>
+				</ul>
+			<a href="..\index.html"><img align="center" class="logo" src="img\logo1.png" alt="Logo" class="center"></a>	
+
+		</div>
+	</div>
+
+				
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('adidas')">
+          Adidas
+        </button>
+        <button class="button-value" onclick="filterProduct('Nike')">
+          Nike
+        </button>
+        <button class="button-value" onclick="filterProduct('Puma')">
+          Puma
+        </button>
+      </div>
+      <div id="products"></div>
+    </div>
+</div>
+
+    <script src="products.js"></script>
+  </body>
+</html>
